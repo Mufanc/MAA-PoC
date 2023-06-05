@@ -26,7 +26,7 @@ object Main {
         builder.setSurface(imageReader.surface)
 
         val callback = VirtualDisplayCallback(null, null)
-        val displayId = dm.createVirtualDisplay(builder.build(), callback, null, "android")
+        val displayId = dm.createVirtualDisplay(builder.build(), callback, null, "com.android.shell")
 
         println("displayId: $displayId")
 
